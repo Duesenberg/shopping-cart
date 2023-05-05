@@ -4,14 +4,13 @@ import Home from './Home';
 import AboutUs from "./AboutUs";
 import ShoppingCart from "./ShoppingCart";
 import Shop from "./Shop";
+import Header from "./Header";
 
 export default function RouterSwitch () {
   return (
     <div className="App">
-      <div className="header">
-        Hello from Header
-      </div>
       <BrowserRouter>
+        <Header />
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/about-us" element={<AboutUs />}></Route>
