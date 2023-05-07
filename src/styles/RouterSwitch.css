@@ -21,6 +21,11 @@ body {
   margin: 0;
 }
 
+.App {
+  min-height: 100vh;
+  height: auto;
+}
+
 /*  -------------------------- header */
 
 @media (max-width: 830px) {
@@ -64,4 +69,29 @@ body {
 }
 .logo .logo-text:hover {
   animation: pop-animation 250ms;
+}
+
+/* -----------------------about us */
+
+@media (max-width: 730px) {
+  .about-us .paragraph {
+    flex-direction: column;
+  }
+
+  .about-us .paragraph img.image {
+    width: 75vw;
+  }
+}
+
+.about-us .paragraph {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.about-us .paragraph .text {
+  flex: 1;
+}
+.about-us .paragraph .image {
+  width: 30vw;
 }
