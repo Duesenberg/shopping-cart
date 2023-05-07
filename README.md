@@ -12,3 +12,15 @@ Assets used:
   - Photo by Tiger Lily from Pexels: https://www.pexels.com/photo/
   man-in-bubble-jacket-holding-tablet-computer-4484078/
 
+  - Photo by Anete Lusina: https://www.pexels.com/photo/
+  black-leather-boxing-gloves-on-the-floor-4790425/
+
+  - Photo by Karolina Grabowska: https://www.pexels.com/photo/
+  a-close-up-shot-of-a-man-wearing-headgear-and-boxing-gloves-7289917/
+
+  - Photo by Ketut Subiyanto: https://www.pexels.com/photo/
+  a-man-with-bandages-on-his-hand-hitting-a-punching-bag-4804073/
+
+  - Photo by Norma Mortenson: https://www.pexels.com/photo/
+  delivery-man-wearing-a-face-mask-carrying-boxes-4391478/
+
