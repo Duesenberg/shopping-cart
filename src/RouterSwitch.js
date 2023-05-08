@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import React from 'react';
+import { React, useState } from 'react';
 import Home from './Home';
 import AboutUs from "./AboutUs";
 import ShoppingCart from "./ShoppingCart";
@@ -7,6 +7,8 @@ import Shop from "./Shop";
 import Header from "./Header";
 
 export default function RouterSwitch () {
+  const [cart, setCart] = useState([]);
+
   return (
     <div className="App">
       <BrowserRouter>
