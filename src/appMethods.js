@@ -1,7 +1,9 @@
 const addToCart = (productIndex, cart, amount) => {
+  let newCart = cart;
+
   switch (productIndex) {
     case 0:
-      cart.push({
+      newCart.push({
         name: 'Classic Pro Style Training Gloves',
         price: 34.99,
         url: './styles/assets/training-gloves.png',
@@ -9,7 +11,7 @@ const addToCart = (productIndex, cart, amount) => {
       });
       break;
     case 1:
-      cart.push({
+      newCart.push({
         name: 'Classic Boxing Gloves',
         price: 19.59,
         url: './styles/assets/pro-boxing-gloves.png',
@@ -17,7 +19,7 @@ const addToCart = (productIndex, cart, amount) => {
       });
       break;
     case 2:
-      cart.push({
+      newCart.push({
         name: 'Full Face Training Headgear',
         price: 109.99,
         url: './styles/assets/full-face-headgear.png',
@@ -25,7 +27,7 @@ const addToCart = (productIndex, cart, amount) => {
       });
       break;
     case 3:
-      cart.push({
+      newCart.push({
         name: 'Classic High Performance Headgear',
         price: 34.99,
         url: './styles/assets/high-performance-headgear.png',
@@ -33,7 +35,7 @@ const addToCart = (productIndex, cart, amount) => {
       });
       break;
     case 4:
-      cart.push({
+      newCart.push({
         name: 'Semi-Elastic Hand Wraps',
         price: 9.99,
         url: './styles/assets/full-face-headgear.png',
@@ -41,7 +43,7 @@ const addToCart = (productIndex, cart, amount) => {
       });
       break;
     case 5:
-      cart.push({
+      newCart.push({
         name: 'Traditional Hand Wraps',
         price: 3.99,
         url: './styles/assets/high-performance-headgear.png',
@@ -49,7 +51,7 @@ const addToCart = (productIndex, cart, amount) => {
       });
       break;
     case 6:
-      cart.push({
+      newCart.push({
         name: 'Premium Leather Punching Bag',
         price: 299.99,
         url: './styles/assets/leather-punching-bag.png',
@@ -57,7 +59,7 @@ const addToCart = (productIndex, cart, amount) => {
       });
       break;
     case 7:
-      cart.push({
+      newCart.push({
         name: 'Leather Speed Punching Bag',
         price: 54.99,
         url: './styles/assets/leather-speed-bag.png',

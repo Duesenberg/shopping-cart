@@ -5,8 +5,11 @@ import AboutUs from "./AboutUs";
 import ShoppingCart from "./ShoppingCart";
 import Shop from "./Shop";
 import Header from "./Header";
+import { addToCart } from "./appMethods";
+import { productsArray } from "./productsArray";
 
 export default function RouterSwitch () {
+  const [products, setProducts] = useState(productsArray);
   const [cart, setCart] = useState([]);
 
   return (
@@ -17,7 +20,12 @@ export default function RouterSwitch () {
           <Route path="/" element={<Home />}></Route>
           <Route path="/about-us" element={<AboutUs />}></Route>
           <Route path="/shopping-cart" element={<ShoppingCart />}></Route>
-          <Route path="/shop" element={<Shop />}></Route>
+          <Route 
+            path="/shop"
+            products={products} 
+            element={
+            <Shop products={products} />
+            }></Route>
         </Routes>
       </BrowserRouter>
     </div>
