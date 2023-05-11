@@ -1,8 +1,8 @@
-import { React, useState } from "react";
+import { React, useEffect, useState } from "react";
 import { Tabs, Tab } from '@mui/material';
 import { Link } from "react-router-dom";
 
-export default function Header () {
+export default function Header (props) {
   const [value, setValue] = useState(0);
 
   const handleChange = (event, newValue) => {
@@ -27,7 +27,7 @@ export default function Header () {
           <Tab label="Home" tabIndex={0} component={Link} to={'/'} />
           <Tab label="About Us" tabIndex={1} component={Link} to={'/about-us'} />
           <Tab label="Shop" tabIndex={2} component={Link} to={'/shop'} />
-          <Tab label={`Cart`} tabIndex={3} component={Link} to={'/shopping-cart'}>
+          <Tab label={`Cart (${props.itemsInCart})`} tabIndex={3} component={Link} to={'/shopping-cart'}>
           </Tab>
         </Tabs>
       </div>

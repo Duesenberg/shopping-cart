@@ -7,6 +7,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
 export default function Shop (props) {
+
   return (
     <div className="shop">
       <h1>Shop</h1>
@@ -15,7 +16,7 @@ export default function Shop (props) {
         {
           props.products.map((product) => {
             return (
-            <Card sx={{ maxWidth: 345 }} key={product.id}>
+            <Card sx={{ maxWidth: 345 }} key={product.id} data-testid='product-card'>
               <CardMedia
                 sx={{ height: 140 }}
                 image={require(`${product.url}`)}
@@ -27,12 +28,18 @@ export default function Shop (props) {
                 </Typography>
               </CardContent>
               <CardActions>
-                <form className='buy-product'>
+                <form 
+                  className='buy-product'
+                  onSubmit={(e) => {
+                      e.preventDefault();
+                      props.populateCart(product.index, props.cart, product.index);
+                      props.sumItemsInCart(props.cart);
+                  }}>
                   <div className='quantity'>
-                    <label for="quantity">Quantity</label>
-                    <input type="number" name="quantity" id="quantity" step="1" min="1" />
+                    <label htmlFor="quantity">Quantity</label>
+                    <input type="number" name="quantity" id={product.index} defaultValue={1} step="1" min="1" />
                   </div>
-                  <Button>Add to Cart</Button>
+                  <Button type='submit' data-id={product.index}>Add to Cart</Button>
                 </form>
               </CardActions>
             </Card>

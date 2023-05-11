@@ -69,6 +69,15 @@ const addToCart = (productIndex, cart, amount) => {
     default:
       break;
   }
+
+  return newCart;
 }
 
-export { addToCart };
+const getQuantityValue = (productIndex, inputId) => {
+  let amount;
+  if (productIndex === inputId)
+    amount = document.getElementById(inputId).value;
+  return amount;
+}
+
+export { addToCart, getQuantityValue };
