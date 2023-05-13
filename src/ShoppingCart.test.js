@@ -4,6 +4,7 @@ import '@testing-library/jest-dom';
 import { BrowserRouter } from 'react-router-dom'
 import uniqid from 'uniqid';
 import ShoppingCart from './ShoppingCart';
+import userEvent from '@testing-library/user-event';
 
 describe('basic page layout renders correctly', () => {
   it('renders cart items and sum total card', () => {
@@ -85,4 +86,25 @@ describe('prices and item amount show up correctly', () => {
       expect(screen.getByText('$19.59 x 2 = $39.18')).toBeInTheDocument();
       expect(screen.getByText('$144.15')).toBeInTheDocument();
   });
+
+  it('function is called when remove button is clicked', async () => {
+    const cart = [
+      {
+        name: 'Classic Pro Style Training Gloves',
+        price: 34.99,
+        url: './styles/assets/training-gloves.png',
+        amount: 3,
+        id: uniqid()
+      }
+    ]
+    const user = userEvent.setup();
+    const removeItemFromCart = jest.fn();
+    render(<ShoppingCart cart={cart} removeItemFromCart={removeItemFromCart}/>);
+    
+    const removeButton = screen.getByRole('button', {name: "Remove"});
+    expect(removeButton).toBeInTheDocument();
+
+    await user.click(removeButton);
+    expect(removeItemFromCart).toHaveBeenCalled();
+  })
 });
