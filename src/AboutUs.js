@@ -5,8 +5,8 @@ export default function AboutUs () {
     <div className="about-us">
       <h1 className='title'>About Us</h1>
 
-      <Paper className='paragraph' elevation={1}>
-        <p>Welcome to our online store dedicated to providing the highest 
+      <Paper className='paragraph' elevation={2}>
+        <p className='text'>Welcome to our online store dedicated to providing the highest 
           quality boxing gear for fighters of all levels! We are passionate 
           about the sport of boxing and believe that everyone should have access 
           to the best equipment to help them achieve their goals and reach their 
@@ -15,7 +15,7 @@ export default function AboutUs () {
 
       <Paper 
         className='paragraph'
-        elevation={1}>
+        elevation={2}>
         <p className='text'>Our team is made up of boxing enthusiasts and experts who have a 
           deep understanding of the sport and its unique requirements. We have 
           carefully curated a selection of products that we believe offer the 
@@ -31,7 +31,7 @@ export default function AboutUs () {
 
       <Paper 
         className='paragraph'
-        elevation={1}>
+        elevation={2}>
         <img
           className='image' 
           src={require('./styles/assets/second-paragraph.jpg')} 
@@ -46,7 +46,7 @@ export default function AboutUs () {
 
       <Paper 
         className='paragraph'
-        elevation={1}>
+        elevation={2}>
         <p className='text'>At our online store, you can expect fast and 
         reliable shipping, competitive pricing, and a hassle-free shopping 
         experience. We are always looking for ways to improve our service and 
@@ -57,8 +57,8 @@ export default function AboutUs () {
           alt='Sewing machine close-up' />
       </Paper>
 
-      <Paper className='paragraph' elevation={1}>
-        <p>Thank you for choosing us as your source for boxing gear. 
+      <Paper className='paragraph' elevation={2}>
+        <p className='text'>Thank you for choosing us as your source for boxing gear. 
           We look forward to helping you achieve your goals and supporting 
           you on your boxing journey!</p>
       </Paper>
