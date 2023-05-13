@@ -90,4 +90,10 @@ const getQuantityValue = (productIndex, inputId) => {
   return amount;
 }
 
-export { addToCart, getQuantityValue };
+const calculateCartSum = (cart) => {
+  let cartSum = 0;
+  cart.forEach(item => {cartSum += (item.amount * item.price);});
+  return cartSum;
+}
+
+export { addToCart, getQuantityValue, calculateCartSum };
