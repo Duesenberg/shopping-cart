@@ -34,8 +34,10 @@ export default function RouterSwitch () {
           <Route path="/about-us" element={<AboutUs />}></Route>
           <Route 
             path="/shopping-cart"
-            cart={cart} 
-            element={<ShoppingCart />}></Route>
+            element={
+            <ShoppingCart 
+              cart={cart} 
+              />}></Route>
           <Route 
             path="/shop"
             element={

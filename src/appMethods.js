@@ -1,3 +1,5 @@
+import uniqid from 'uniqid';
+
 const addToCart = (productIndex, cart, amount) => {
   let newCart = cart;
 
@@ -7,7 +9,8 @@ const addToCart = (productIndex, cart, amount) => {
         name: 'Classic Pro Style Training Gloves',
         price: 34.99,
         url: './styles/assets/training-gloves.png',
-        amount: amount
+        amount: amount,
+        id: uniqid()
       });
       break;
     case 1:
@@ -15,7 +18,8 @@ const addToCart = (productIndex, cart, amount) => {
         name: 'Classic Boxing Gloves',
         price: 19.59,
         url: './styles/assets/pro-boxing-gloves.png',
-        amount: amount
+        amount: amount,
+        id: uniqid()
       });
       break;
     case 2:
@@ -23,7 +27,8 @@ const addToCart = (productIndex, cart, amount) => {
         name: 'Full Face Training Headgear',
         price: 109.99,
         url: './styles/assets/full-face-headgear.png',
-        amount: amount
+        amount: amount,
+        id: uniqid()
       });
       break;
     case 3:
@@ -31,7 +36,8 @@ const addToCart = (productIndex, cart, amount) => {
         name: 'Classic High Performance Headgear',
         price: 34.99,
         url: './styles/assets/high-performance-headgear.png',
-        amount: amount
+        amount: amount,
+        id: uniqid()
       });
       break;
     case 4:
@@ -39,7 +45,8 @@ const addToCart = (productIndex, cart, amount) => {
         name: 'Semi-Elastic Hand Wraps',
         price: 9.99,
         url: './styles/assets/full-face-headgear.png',
-        amount: amount
+        amount: amount,
+        id: uniqid()
       });
       break;
     case 5:
@@ -47,7 +54,8 @@ const addToCart = (productIndex, cart, amount) => {
         name: 'Traditional Hand Wraps',
         price: 3.99,
         url: './styles/assets/high-performance-headgear.png',
-        amount: amount
+        amount: amount,
+        id: uniqid()
       });
       break;
     case 6:
@@ -55,7 +63,8 @@ const addToCart = (productIndex, cart, amount) => {
         name: 'Premium Leather Punching Bag',
         price: 299.99,
         url: './styles/assets/leather-punching-bag.png',
-        amount: amount
+        amount: amount,
+        id: uniqid()
       });
       break;
     case 7:
@@ -63,7 +72,8 @@ const addToCart = (productIndex, cart, amount) => {
         name: 'Leather Speed Punching Bag',
         price: 54.99,
         url: './styles/assets/leather-speed-bag.png',
-        amount: amount
+        amount: amount,
+        id: uniqid()
       });
       break;
     default:
