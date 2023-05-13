@@ -38,7 +38,11 @@ export default function ShoppingCart (props) {
                   </Typography>
                 </CardContent>
                 <CardActions>
-                  <Button >Remove</Button>
+                  <Button 
+                    data-id={item.id} 
+                    onClick={e => {
+                      props.removeItemFromCart(props.cart, e);
+                    }} >Remove</Button>
                 </CardActions>
             </Card>
           )}) :

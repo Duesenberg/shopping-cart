@@ -96,4 +96,10 @@ const calculateCartSum = (cart) => {
   return cartSum;
 }
 
-export { addToCart, getQuantityValue, calculateCartSum };
+const removeFromCart = (cart, e) => {
+  let newCart = [];
+  cart.forEach(item => {if (item.id !== e.target.dataset.id)newCart.push(item);});
+  return newCart;
+}
+
+export { addToCart, getQuantityValue, calculateCartSum, removeFromCart };

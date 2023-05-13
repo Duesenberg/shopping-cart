@@ -5,7 +5,7 @@ import AboutUs from "./AboutUs";
 import ShoppingCart from "./ShoppingCart";
 import Shop from "./Shop";
 import Header from "./Header";
-import { addToCart, getQuantityValue } from "./appMethods";
+import { addToCart, getQuantityValue, removeFromCart } from "./appMethods";
 import { productsArray } from "./productsArray";
 
 export default function RouterSwitch () {
@@ -25,10 +25,18 @@ export default function RouterSwitch () {
     setCart(newCart);
   }
 
+  const removeItemFromCart = (cart, e) => {
+    const newCart = removeFromCart(cart, e);
+    setCart(newCart);
+  }
+
   return (
     <div className="App">
       <BrowserRouter>
-        <Header itemsInCart={itemsInCart} />
+        <Header 
+          cart={cart}
+          itemsInCart={itemsInCart}
+          sumItemsInCart={sumItemsInCart} />
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/about-us" element={<AboutUs />}></Route>
@@ -37,6 +45,8 @@ export default function RouterSwitch () {
             element={
             <ShoppingCart 
               cart={cart} 
+              removeItemFromCart={removeItemFromCart}
+              sumItemsInCart={sumItemsInCart}
               />}></Route>
           <Route 
             path="/shop"

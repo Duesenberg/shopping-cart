@@ -9,6 +9,10 @@ export default function Header (props) {
     setValue(newValue);
   };
 
+  useEffect(() => {
+    props.sumItemsInCart(props.cart);
+  })
+
   return (
     <div className="header">
       <div className="logo">
