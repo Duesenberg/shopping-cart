@@ -38,10 +38,10 @@ export default function RouterSwitch () {
           itemsInCart={itemsInCart}
           sumItemsInCart={sumItemsInCart} />
         <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/about-us" element={<AboutUs />}></Route>
+          <Route path="/shopping-cart" element={<Home />}></Route>
+          <Route path="/shopping-cart/about-us" element={<AboutUs />}></Route>
           <Route 
-            path="/shoppingcart"
+            path="/shopping-cart/cart"
             element={
             <ShoppingCart 
               cart={cart} 
@@ -49,7 +49,7 @@ export default function RouterSwitch () {
               sumItemsInCart={sumItemsInCart}
               />}></Route>
           <Route 
-            path="/shop"
+            path="/shopping-cart/shop"
             element={
             <Shop 
               products={products}
