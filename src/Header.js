@@ -31,7 +31,7 @@ export default function Header (props) {
           <Tab label="Home" tabIndex={0} component={Link} to={'/'} />
           <Tab label="Info" tabIndex={1} component={Link} to={'/about-us'} />
           <Tab label="Shop" tabIndex={2} component={Link} to={'/shop'} />
-          <Tab label={`Cart (${props.itemsInCart})`} tabIndex={3} component={Link} to={'/shopping-cart'}>
+          <Tab label={`Cart (${props.itemsInCart})`} tabIndex={3} component={Link} to={'/shoppingcart'}>
           </Tab>
         </Tabs>
       </div>

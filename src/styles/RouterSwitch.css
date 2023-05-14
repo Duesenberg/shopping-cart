@@ -77,18 +77,18 @@ body {
   animation: pop-animation 250ms;
 }
 
-span.css-1aquho2-MuiTabs-indicator {
+span.MuiTabs-indicator {
   background-color: #00ffff;
   height: 10px;
 }
 
-a.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+a.MuiTab-root.Mui-selected {
   color: #00ffff;
   font-weight: bold;
   font-size: 1.2rem;
 }
 
-a.css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+a.MuiTab-root {
   color: white;
   font-weight: bold;
   font-size: 1.2rem;
@@ -218,19 +218,19 @@ a.css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
   }
 }
 
-div.css-1ri6ub7-MuiPaper-root-MuiCard-root {
+div.MuiCard-root {
   background-color: rgb(0, 68, 68, .8);
   border-radius: 0px;
 }
 
-div.css-h93ljk-MuiTypography-root {
+div.MuiTypography-root {
   color: white;
   font-size: 1.75rem;
   text-align: center;
   font-weight: bold;
 }
 
-p.css-r40f8v-MuiTypography-root {
+p.MuiTypography-root {
   color: white;
   font-size: 1.15rem;
   text-align: justify;
@@ -266,7 +266,7 @@ p.css-r40f8v-MuiTypography-root {
   gap: 15px;
 }
 
-div.css-1t6e9jv-MuiCardActions-root {
+div.MuiCardActions-root {
   display: flex;
   justify-content: center;
   padding-bottom: 20px;
@@ -300,7 +300,7 @@ div.css-1t6e9jv-MuiCardActions-root {
   text-align: center;
 }
 
-button.css-1e6y48t-MuiButtonBase-root-MuiButton-root.submit-button {
+button.MuiButton-root.submit-button {
   color: white;
   font-size: 1.25rem;
   font-weight: bold;
@@ -345,7 +345,7 @@ button.css-1e6y48t-MuiButtonBase-root-MuiButton-root.submit-button {
   flex: 1;
 }
 
-.css-pwngrv-MuiPaper-root-MuiCard-root.empty-cart-card {
+.MuiCard-root.empty-cart-card {
   padding: 30px;
   background-color: rgb(0, 68, 68, .95);
   border-radius: 0px;
@@ -359,45 +359,52 @@ button.css-1e6y48t-MuiButtonBase-root-MuiButton-root.submit-button {
   font-weight: bold;
 }
 
-div.css-bhp9pd-MuiPaper-root-MuiCard-root.cart-card {
+div.MuiCard-root.cart-card {
   display: flex;
   padding: 20px;
   align-items: center;
   background-color: rgb(0, 68, 68, .95);
   border-radius: 0px;
 }
+
 @media (max-width: 600px) {
-  div.css-bhp9pd-MuiPaper-root-MuiCard-root.cart-card {
+  div.MuiCard-root.cart-card {
     flex-direction: column;
   }
 }
-div.css-bhp9pd-MuiPaper-root-MuiCard-root.cart-card .css-1999db7-MuiCardMedia-root {
+
+div.MuiCard-root.cart-card .MuiCardMedia-root {
   width: 140px;
 }
-div.css-bhp9pd-MuiPaper-root-MuiCard-root.cart-card  div.css-h93ljk-MuiTypography-root {
+
+div.MuiCard-root.cart-card  div.MuiTypography-root {
   font-size: 1.25rem;
   text-align: start;
 }
-div.css-bhp9pd-MuiPaper-root-MuiCard-root.cart-card .css-46bh2p-MuiCardContent-root {
+
+div.MuiCard-root.cart-card .MuiCardContent-root {
   flex: 1;
 }
-div.css-bhp9pd-MuiPaper-root-MuiCard-root.cart-card .css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+
+div.MuiCard-root.cart-card .MuiButton-root {
   color: white;
   font-size: 1.25rem;
   font-weight: bold;
   border: solid 1px white;
 }
 
-.css-pwngrv-MuiPaper-root-MuiCard-root.sum-card {
+.MuiCard-root.sum-card {
   background-color: rgb(0, 68, 68, .95);
   border-radius: 0px;
   border: 1px solid white;
 }
-.css-pwngrv-MuiPaper-root-MuiCard-root.sum-card p,
-.css-pwngrv-MuiPaper-root-MuiCard-root.sum-card div {
+
+.MuiCard-root.sum-card p,
+.MuiCard-root.sum-card div {
   color: white;
 }
-.css-pwngrv-MuiPaper-root-MuiCard-root.sum-card button {
+
+.MuiCard-root.sum-card button {
   color: white;
   font-size: 1.25rem;
   font-weight: bold;

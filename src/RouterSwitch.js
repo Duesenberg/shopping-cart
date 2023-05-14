@@ -41,7 +41,7 @@ export default function RouterSwitch () {
           <Route path="/" element={<Home />}></Route>
           <Route path="/about-us" element={<AboutUs />}></Route>
           <Route 
-            path="/shopping-cart"
+            path="/shoppingcart"
             element={
             <ShoppingCart 
               cart={cart} 
