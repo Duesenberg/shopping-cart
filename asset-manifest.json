@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.d3e2b0ac.css",
-    "main.js": "/shopping-cart/static/js/main.9ae6738f.js",
+    "main.css": "/shopping-cart/static/css/main.41073c71.css",
+    "main.js": "/shopping-cart/static/js/main.b60107b0.js",
     "static/media/home-2.jpg": "/shopping-cart/static/media/home-2.cc73917f86a24d494326.jpg",
     "static/media/second-paragraph.jpg": "/shopping-cart/static/media/second-paragraph.5af36727c58cfdc9188c.jpg",
     "static/media/about-us-background.jpg": "/shopping-cart/static/media/about-us-background.460e03c2b46e91fdd6cc.jpg",
@@ -24,11 +24,11 @@
     "static/media/HoltwoodOneSC-Regular.ttf": "/shopping-cart/static/media/HoltwoodOneSC-Regular.c8fd789083fb024d817f.ttf",
     "index.html": "/shopping-cart/index.html",
     "static/media/star.svg": "/shopping-cart/static/media/star.de7ced177d66bb006694.svg",
-    "main.d3e2b0ac.css.map": "/shopping-cart/static/css/main.d3e2b0ac.css.map",
-    "main.9ae6738f.js.map": "/shopping-cart/static/js/main.9ae6738f.js.map"
+    "main.41073c71.css.map": "/shopping-cart/static/css/main.41073c71.css.map",
+    "main.b60107b0.js.map": "/shopping-cart/static/js/main.b60107b0.js.map"
   },
   "entrypoints": [
-    "static/css/main.d3e2b0ac.css",
-    "static/js/main.9ae6738f.js"
+    "static/css/main.41073c71.css",
+    "static/js/main.b60107b0.js"
   ]
 }
