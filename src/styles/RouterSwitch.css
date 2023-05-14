@@ -24,6 +24,8 @@ body {
 .App {
   min-height: 100vh;
   height: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 /*  -------------------------- header */
@@ -315,4 +317,90 @@ button.css-1e6y48t-MuiButtonBase-root-MuiButton-root.submit-button {
   .cards-container {
     grid-template-columns: 345px;
   }
+}
+
+/* ------------shopping cart */
+
+.shopping-cart {
+  background-image: url(./assets/cart-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  flex: 1;
+}
+
+@media (max-width: 900px) {
+  .shopping-cart {
+    flex-direction: column;
+  }
+}
+
+.items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.css-pwngrv-MuiPaper-root-MuiCard-root.empty-cart-card {
+  padding: 30px;
+  background-color: rgb(0, 68, 68, .95);
+  border-radius: 0px;
+  height: fit-content;
+}
+
+.empty-cart-card p {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+div.css-bhp9pd-MuiPaper-root-MuiCard-root.cart-card {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  background-color: rgb(0, 68, 68, .95);
+  border-radius: 0px;
+}
+@media (max-width: 600px) {
+  div.css-bhp9pd-MuiPaper-root-MuiCard-root.cart-card {
+    flex-direction: column;
+  }
+}
+div.css-bhp9pd-MuiPaper-root-MuiCard-root.cart-card .css-1999db7-MuiCardMedia-root {
+  width: 140px;
+}
+div.css-bhp9pd-MuiPaper-root-MuiCard-root.cart-card  div.css-h93ljk-MuiTypography-root {
+  font-size: 1.25rem;
+  text-align: start;
+}
+div.css-bhp9pd-MuiPaper-root-MuiCard-root.cart-card .css-46bh2p-MuiCardContent-root {
+  flex: 1;
+}
+div.css-bhp9pd-MuiPaper-root-MuiCard-root.cart-card .css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border: solid 1px white;
+}
+
+.css-pwngrv-MuiPaper-root-MuiCard-root.sum-card {
+  background-color: rgb(0, 68, 68, .95);
+  border-radius: 0px;
+  border: 1px solid white;
+}
+.css-pwngrv-MuiPaper-root-MuiCard-root.sum-card p,
+.css-pwngrv-MuiPaper-root-MuiCard-root.sum-card div {
+  color: white;
+}
+.css-pwngrv-MuiPaper-root-MuiCard-root.sum-card button {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border: solid 1px white;
+  background-color: black;
 }

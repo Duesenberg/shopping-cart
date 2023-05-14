@@ -23,7 +23,7 @@ export default function ShoppingCart (props) {
             <Card 
               key={item.id}
               data-testid='cart-card'
-              sx={{ maxWidth: 345 }}>
+              className='cart-card'>
                 <CardMedia
                   sx={{ height: 140 }}
                   image={require(`${item.url}`)}
@@ -34,7 +34,7 @@ export default function ShoppingCart (props) {
                     {item.name} x {item.amount}
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
-                    ${item.price} x {item.amount} = ${item.price * item.amount}
+                    ${item.price} x {item.amount} = ${(item.price * item.amount).toFixed(2)}
                   </Typography>
                 </CardContent>
                 <CardActions>
@@ -46,25 +46,26 @@ export default function ShoppingCart (props) {
                 </CardActions>
             </Card>
           )}) :
-            <Card sx={{ minWidth: 275 }} data-testid='empty-cart-card'>
-              <CardContent>
+            <Card 
+              sx={{ minWidth: 275 }} 
+              data-testid='empty-cart-card' 
+              className='empty-cart-card'>
                 <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
                   Cart is empty.
                 </Typography>
-              </CardContent>
             </Card>
           }
       </div>
 
       <div className='summary-card'>
         {props.cart.length !== 0 ? 
-          <Card sx={{ minWidth: 275 }} data-testid='sum-card'>
+          <Card sx={{ minWidth: 275 }} data-testid='sum-card' className='sum-card'>
             <CardContent>
               <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
                 Total
               </Typography>
               <Typography variant="h5" component="div">
-                ${cartSum}
+                ${cartSum.toFixed(2)}
               </Typography>
             </CardContent>
             <CardActions>

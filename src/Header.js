@@ -29,7 +29,7 @@ export default function Header (props) {
       <div className="navigation">
         <Tabs value={value} onChange={handleChange}>
           <Tab label="Home" tabIndex={0} component={Link} to={'/'} />
-          <Tab label="About Us" tabIndex={1} component={Link} to={'/about-us'} />
+          <Tab label="Info" tabIndex={1} component={Link} to={'/about-us'} />
           <Tab label="Shop" tabIndex={2} component={Link} to={'/shop'} />
           <Tab label={`Cart (${props.itemsInCart})`} tabIndex={3} component={Link} to={'/shopping-cart'}>
           </Tab>

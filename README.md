@@ -33,3 +33,5 @@ Assets used:
   - Photo by Ron Lach : https://www.pexels.com/photo/
   silhouette-of-person-in-boxing-gym-8736743/
 
+  - Photo by Antoni Shkraba: https://www.pexels.com/photo/
+  a-man-doing-boxing-training-4398389/

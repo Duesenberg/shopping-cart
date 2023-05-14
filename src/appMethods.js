@@ -44,7 +44,7 @@ const addToCart = (productIndex, cart, amount) => {
       newCart.push({
         name: 'Semi-Elastic Hand Wraps',
         price: 9.99,
-        url: './styles/assets/full-face-headgear.png',
+        url: './styles/assets/semi-elastic-wraps.png',
         amount: amount,
         id: uniqid()
       });
@@ -53,7 +53,7 @@ const addToCart = (productIndex, cart, amount) => {
       newCart.push({
         name: 'Traditional Hand Wraps',
         price: 3.99,
-        url: './styles/assets/high-performance-headgear.png',
+        url: './styles/assets/traditional-wraps.png',
         amount: amount,
         id: uniqid()
       });
