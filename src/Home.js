@@ -11,16 +11,16 @@ export default function Home () {
     <div className="home">
       <h1 className='title'>Welcome!</h1>
 
-      <Paper className='paragraph' elevation={1}>
-        <p>Welcome to BoxShop, your one-stop-shop for all your boxing 
+      <Paper className='paragraph' elevation={2}>
+        <p className='text'>Welcome to BoxShop, your one-stop-shop for all your boxing 
           equipment needs! We are thrilled to have you here and excited to 
           provide you with the highest quality boxing gear and accessories 
           available online. Whether you're a seasoned pro or just starting out, 
           our wide selection of products is sure to meet your every need.</p>
       </Paper>
 
-      <Paper className='paragraph' elevation={1}>
-        <p>At BoxShop, we understand that every boxer has unique requirements 
+      <Paper className='paragraph' elevation={2}>
+        <p className='text'>At BoxShop, we understand that every boxer has unique requirements 
           when it comes to equipment. That's why we offer a wide variety of 
           products, including gloves, headgear, punching bags, and more, to 
           help you find the perfect fit for your style and skill level. With 
@@ -94,7 +94,7 @@ export default function Home () {
 
       <Paper 
         className='paragraph'
-        elevation={1}>
+        elevation={2}>
         <p className='text'>We pride ourselves on our fast and efficient 
         shipping, so you can start training with your new gear as soon as 
         possible. Our friendly and knowledgeable customer service team is 
@@ -106,8 +106,8 @@ export default function Home () {
           alt='fast shipping' />
       </Paper>
 
-      <Paper className='paragraph' elevation={1}>
-        <p>Thank you for choosing BoxShop as your go-to online store for 
+      <Paper className='paragraph' elevation={2}>
+        <p className='text'>Thank you for choosing BoxShop as your go-to online store for 
           boxing equipment. We look forward to serving you and helping you 
           achieve your boxing goals!</p>
       </Paper>

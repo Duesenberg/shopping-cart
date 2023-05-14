@@ -46,6 +46,7 @@ body {
   align-items: center;
   position: sticky;
   top: 0px;
+  z-index: 1;
 }
 
 /* logo */
@@ -128,6 +129,8 @@ a.css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
   align-items: center;
   width: auto;
   padding: 20px;
+  border-radius: 0px;
+  gap: 20px;
   background-color: rgb(0, 68, 68, .8); 
 }
 
@@ -136,12 +139,33 @@ a.css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
   padding: 10px;
   color: white;
   font-size: 1.3rem;
+  text-align: justify;
 }
 .about-us .paragraph .image {
-  width: 30vw;
+  width: 25vw;
 }
 
 /* ------------------------- home */
+
+.home {
+  background-image: url(./assets/home-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.home .title {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 0;
+  margin: 20px;
+}
 
 .home .visit-shop {
   display: grid;
@@ -165,13 +189,21 @@ a.css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
 .home .paragraph {
   display: flex;
   align-items: center;
-  width: 100%;
+  width: auto;
+  padding: 20px;
+  border-radius: 0px;
+  gap: 20px;
+  background-color: rgb(0, 68, 68, .8);
 }
 .home .paragraph .text {
   flex: 1;
+  padding: 10px;
+  color: white;
+  font-size: 1.3rem;
+  text-align: justify;
 }
 .home .paragraph .image {
-  width: 30vw;
+  width: 25vw;
 }
 
 @media (max-width: 730px) {
@@ -184,13 +216,93 @@ a.css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
   }
 }
 
+div.css-1ri6ub7-MuiPaper-root-MuiCard-root {
+  background-color: rgb(0, 68, 68, .8);
+  border-radius: 0px;
+}
+
+div.css-h93ljk-MuiTypography-root {
+  color: white;
+  font-size: 1.75rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+p.css-r40f8v-MuiTypography-root {
+  color: white;
+  font-size: 1.15rem;
+  text-align: justify;
+  padding: 10px;
+}
+
 /* --------------------shop */
+
+.shop {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-image: url(./assets/shop-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
+}
+
+.shop .title {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 0;
+  margin: 20px;
+}
 
 .cards-container {
   display: grid;
   grid-template-columns: repeat(3, 345px);
   justify-content: space-around;
   gap: 15px;
+}
+
+div.css-1t6e9jv-MuiCardActions-root {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.cards-container .buy-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.buy-product .quantity {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+
+.buy-product .quantity label {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.buy-product .quantity input {
+  width: 50px;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  color: white;
+  text-align: center;
+}
+
+button.css-1e6y48t-MuiButtonBase-root-MuiButton-root.submit-button {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border: solid 1px white;
 }
 
 @media (max-width: 1100px) {

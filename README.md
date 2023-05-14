@@ -27,3 +27,9 @@ Assets used:
   - Photo by KoolShooters  : https://www.pexels.com/photo/
   a-man-and-woman-inside-the-boxing-ring-9945194/
 
+  - Photo by KoolShooters  : https://www.pexels.com/photo/
+  a-woman-in-black-sports-bra-wearing-a-boxing-gloves-9945075/
+
+  - Photo by Ron Lach : https://www.pexels.com/photo/
+  silhouette-of-person-in-boxing-gym-8736743/
+

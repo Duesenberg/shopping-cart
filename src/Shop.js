@@ -10,7 +10,7 @@ export default function Shop (props) {
 
   return (
     <div className="shop">
-      <h1>Shop</h1>
+      <h1 className='title'>Shop</h1>
 
       <div className="cards-container">
         {
@@ -24,7 +24,7 @@ export default function Shop (props) {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                  {product.name}
+                  {product.name} - ${product.price}
                 </Typography>
               </CardContent>
               <CardActions>
@@ -36,10 +36,13 @@ export default function Shop (props) {
                       props.sumItemsInCart(props.cart);
                   }}>
                   <div className='quantity'>
-                    <label htmlFor="quantity">Quantity</label>
+                    <label htmlFor="quantity">Quantity:</label>
                     <input type="number" name="quantity" id={product.index} defaultValue={1} step="1" min="1" />
                   </div>
-                  <Button type='submit' data-id={product.index}>Add to Cart</Button>
+                  <Button 
+                    type='submit' 
+                    data-id={product.index}
+                    className='submit-button'>Add to Cart</Button>
                 </form>
               </CardActions>
             </Card>
