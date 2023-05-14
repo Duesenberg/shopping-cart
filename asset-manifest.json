@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.d3e2b0ac.css",
+    "main.js": "/shopping-cart/static/js/main.9ae6738f.js",
+    "static/media/home-2.jpg": "/shopping-cart/static/media/home-2.cc73917f86a24d494326.jpg",
+    "static/media/second-paragraph.jpg": "/shopping-cart/static/media/second-paragraph.5af36727c58cfdc9188c.jpg",
+    "static/media/about-us-background.jpg": "/shopping-cart/static/media/about-us-background.460e03c2b46e91fdd6cc.jpg",
+    "static/media/first-paragraph.jpg": "/shopping-cart/static/media/first-paragraph.7453ebc729f326bfee00.jpg",
+    "static/media/home-background.jpg": "/shopping-cart/static/media/home-background.e85f8ee619a202bb29b9.jpg",
+    "static/media/third-paragraph.jpg": "/shopping-cart/static/media/third-paragraph.fd105475f35c9455a4aa.jpg",
+    "static/media/cart-background.jpg": "/shopping-cart/static/media/cart-background.444acb7b64506028a403.jpg",
+    "static/media/home-3.jpg": "/shopping-cart/static/media/home-3.9991059ceb36595c40f9.jpg",
+    "static/media/shop-background.jpg": "/shopping-cart/static/media/shop-background.d0875fd35f86fb20cfe3.jpg",
+    "static/media/home-1.jpg": "/shopping-cart/static/media/home-1.a9403d2632f6447b86d6.jpg",
+    "static/media/home-4.jpg": "/shopping-cart/static/media/home-4.49540a440d3a4a56684c.jpg",
+    "static/media/full-face-headgear.png": "/shopping-cart/static/media/full-face-headgear.6f138bd211abd0bdda74.png",
+    "static/media/semi-elastic-wraps.png": "/shopping-cart/static/media/semi-elastic-wraps.d2f23e2b8939d0caa93c.png",
+    "static/media/high-performance-headgear.png": "/shopping-cart/static/media/high-performance-headgear.937816c4864032ac1daa.png",
+    "static/media/pro-boxing-gloves.png": "/shopping-cart/static/media/pro-boxing-gloves.602e524d911ada38e225.png",
+    "static/media/traditional-wraps.png": "/shopping-cart/static/media/traditional-wraps.924d4f95f9a5ef23d4ad.png",
+    "static/media/leather-speed-bag.png": "/shopping-cart/static/media/leather-speed-bag.596ae7143f54254f5f1a.png",
+    "static/media/leather-punching-bag.png": "/shopping-cart/static/media/leather-punching-bag.583ef5dddc8931d33ed8.png",
+    "static/media/training-gloves.png": "/shopping-cart/static/media/training-gloves.a81150d53c8cfb96c81f.png",
+    "static/media/HoltwoodOneSC-Regular.ttf": "/shopping-cart/static/media/HoltwoodOneSC-Regular.c8fd789083fb024d817f.ttf",
+    "index.html": "/shopping-cart/index.html",
+    "static/media/star.svg": "/shopping-cart/static/media/star.de7ced177d66bb006694.svg",
+    "main.d3e2b0ac.css.map": "/shopping-cart/static/css/main.d3e2b0ac.css.map",
+    "main.9ae6738f.js.map": "/shopping-cart/static/js/main.9ae6738f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d3e2b0ac.css",
+    "static/js/main.9ae6738f.js"
+  ]
+}
